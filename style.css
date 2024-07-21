@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.icon {
+  width: 30px;
+}
+
+.media-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: white;
+}
+
+header,
+main {
+  margin: 10px;
+}
+
+main {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+footer {
+  background-color: #0891b2;
+}
+
+/* Project Styling */
+
+.projects {
+  display: grid;
+  gap: 10px;
+}
+
+.project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: blue;
+  height: 200px;
+  width: auto;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-header .media-links {
+  gap: 0px;
+}
+
+.project-header h3 {
+  margin-left: 20px;
+}
+
+.project-information p {
+  height: 100px;
+}
+
+.project-information {
+  height: fit-content;
+  margin: 10px;
+}
+
+.project-container {
+  height: fit-content;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
+
+.info p {
+  font-size: small;
+}
