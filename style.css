@@ -43,6 +43,8 @@ main {
 main {
   margin-top: 80px;
   margin-bottom: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 footer {
@@ -53,7 +55,9 @@ footer {
 
 .projects {
   display: grid;
-  gap: 10px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .project-image {
@@ -100,4 +104,13 @@ footer {
 
 .info p {
   font-size: small;
+}
+
+@media (min-width: 800px) {
+  .projects {
+    grid-template-columns: repeat(
+      3,
+      minmax(0, 300px)
+    ); /* Ensures a maximum of 3 columns */
+  }
 }
