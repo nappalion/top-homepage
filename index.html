@@ -8,8 +8,11 @@
   </head>
   <body>
     <header>
-      <div>
-        <img src="assets/profile.jpg" />
+      <div class="profile-container">
+        <picture>
+          <source srcset="assets/profile.jpg" media="(min-width: 560px)" />
+          <img class="profile" src="assets/profile-mobile.jpg" />
+        </picture>
         <h1>Ashley Williams</h1>
       </div>
       <div class="about-section">
@@ -131,28 +134,36 @@
     </main>
 
     <footer>
-      <h2>Contact me</h2>
-      <p>
-        Please get in touch if you think our work could be mutually beneficial!
-      </p>
-      <div class="address">
-        1234 Random Road<br />
-        Random Town, California 12345
+      <div class="footer-container">
+        <div class="contact">
+          <h2>Contact me</h2>
+          <p>
+            Please get in touch if you think our work could be mutually
+            beneficial!
+          </p>
+          <div class="address">
+            1234 Random Road<br />
+            Random Town, California 12345
+          </div>
+          <div class="info">
+            <img class="icon" src="assets/phone-fill.svg" />
+            <p>555-555-5555</p>
+          </div>
+          <div class="info">
+            <img class="icon" src="assets/mail-fill.svg" />
+            <p>ashleywilliams.is.not.real@gmail.com</p>
+          </div>
+          <div class="media-links">
+            <img class="icon" src="assets/github-fill.svg" />
+            <img class="icon" src="assets/linkedin-box-fill.svg" />
+            <img class="icon" src="assets/twitter-fill.svg" />
+          </div>
+        </div>
+        <picture>
+          <source srcset="assets/footer-pic.jpg" media="(min-width: 560px)" />
+          <img class="profile" src="assets/footer-pic-mobile.jpg" />
+        </picture>
       </div>
-      <div class="info">
-        <img class="icon" src="assets/phone-fill.svg" />
-        <p>555-555-5555</p>
-      </div>
-      <div class="info">
-        <img class="icon" src="assets/mail-fill.svg" />
-        <p>ashleywilliams.is.not.real@gmail.com</p>
-      </div>
-      <div class="media-links">
-        <img class="icon" src="assets/github-fill.svg" />
-        <img class="icon" src="assets/linkedin-box-fill.svg" />
-        <img class="icon" src="assets/twitter-fill.svg" />
-      </div>
-      <img src="assets/footer-pic.jpg" />
     </footer>
   </body>
 </html>

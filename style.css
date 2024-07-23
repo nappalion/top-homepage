@@ -13,12 +13,28 @@ h3 {
   margin: 0px;
 }
 
+header h1 {
+  color: rgb(39, 39, 39);
+  font-size: 50px;
+  position: absolute;
+  transform: translate(0%, -100%);
+}
+
 h2 {
   text-align: center;
+  font-size: 30px;
 }
 
 .icon {
   width: 30px;
+}
+
+footer {
+  background-color: #0891b2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .media-links {
@@ -27,13 +43,13 @@ h2 {
   gap: 20px;
 }
 
-.about-section {
+/* .about-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
   background-color: white;
-}
+} */
 
 header,
 main {
@@ -47,17 +63,29 @@ main {
   margin-right: 20px;
 }
 
-footer {
-  background-color: #0891b2;
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
+.info .icon {
+  width: 15px;
+}
+
+.info p {
+  margin: 0;
+  font-size: small;
+}
 /* Project Styling */
 
 .projects {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .project-image {
@@ -97,20 +125,88 @@ footer {
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-.info {
-  display: flex;
-  flex-direction: row;
+/* tablet version */
+@media (min-width: 560px) {
+  header {
+    padding-top: 40px;
+  }
+
+  .profile-container .profile {
+    float: left;
+    height: 230px;
+    width: auto;
+    margin: 10px;
+    margin-top: -30px;
+  }
+
+  header h1 {
+    color: rgb(39, 39, 39);
+    font-size: 45px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 40px;
+  }
+
+  .about-section {
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+    margin: 40px;
+    padding: 20px;
+  }
+
+  header .media-links {
+    display: none;
+  }
+
+  .footer-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-container picture {
+    margin: 20px;
+    flex: 1;
+  }
+
+  .footer-container .media-links {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .contact {
+    padding: 20px;
+    flex: 1;
+  }
 }
 
-.info p {
-  font-size: small;
-}
-
+/* pc version */
 @media (min-width: 800px) {
   .projects {
     grid-template-columns: repeat(
       3,
       minmax(0, 300px)
     ); /* Ensures a maximum of 3 columns */
+  }
+
+  .profile-container .profile {
+    float: left;
+    height: 300px;
+    width: auto;
+  }
+
+  header h1 {
+    color: rgb(39, 39, 39);
+    font-size: 40px;
+    position: absolute;
+    transform: translate(-65%, 390%);
+  }
+
+  header .media-links {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer-container {
+    align-items: flex-start;
   }
 }
